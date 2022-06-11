@@ -8,15 +8,7 @@
 //   }
 function superbowlWin(record){
     let result = record.find(record=>record.result==="W")
-    if(result===true){
-        return record.year;
-    }else{
-        return undefined;
-    }
- 
+    return result ? result.year: undefined;
+    
 }
-function superBowlWin(sadReality){
-    let result = record.find(record=>record.result==="N/A")
-    result = undefined;
-    return result;
-}
+
